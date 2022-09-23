@@ -1,17 +1,13 @@
 .navbar{
     background-color: var(--color-grey-1);
     padding: 1.75rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    z-index: 1;
 }
 
-.navbar-items{
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar-links{
-    display: flex;
-    gap: 1rem;
-}
 
 .navbar-link{
     background-color: transparent;

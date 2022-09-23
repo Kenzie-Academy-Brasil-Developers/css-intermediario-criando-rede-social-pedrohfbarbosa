@@ -1,0 +1,45 @@
+button {
+    border: none;    
+    padding: var(--gap-1);
+    cursor: pointer;
+    border-radius: var(--radius-1);    
+}
+
+.button-follow {
+    background-color: transparent;
+    border: 1px solid var(--color-grey-3);
+    height: var(--size-1);
+}
+
+.button-follow:hover {
+    background-color: var(--color-brand);
+    color: var(--color-white-fixed);
+    border-color: var(--color-brand);
+    
+}
+
+.post-button:hover {
+    background-color: var(--color-black);
+    color: var(--color-white-fixed);
+}
+
+.button-open-post {
+    background-color: var(--color-black);
+    color: var(--color-white-fixed);
+    border: 1px solid transparent;
+}
+
+.button-open-post:hover {
+    border: 1px solid var(--color-grey-3);
+    background-color: var(--color-white-fixed);
+    color: var(--color-black);
+}
+
+.button-like {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.button-like img {
+    object-fit: cover;    
+}

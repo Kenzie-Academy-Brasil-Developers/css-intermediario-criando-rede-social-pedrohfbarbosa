@@ -1,0 +1,23 @@
+@media(max-width: 900px){
+    .content-wrapper {
+        width: 100vw;
+        flex-direction: column;
+    }
+    .container-minor {
+        width: 100%;
+    }
+    .suggestions-wrapper{
+        width: 100%;
+        
+    }
+    .follow-suggestions {
+        flex-direction: row;
+        width: 100%;
+        overflow: auto;
+        gap: 5rem;
+    }
+    .follow-suggestions li {
+        width: 18rem;        
+        flex-shrink: 0;
+    }
+}

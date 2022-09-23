@@ -1,0 +1,27 @@
+input {
+    background-color: transparent;
+    padding: var(--gap-1);
+    border: 1px solid var(--color-grey-3);
+    outline: none;
+    border-radius: var(--radius-1);
+}
+
+input::placeholder {
+    font-weight: 400;
+    font-size: var(--size-3);
+    color: var(--color-grey-2);
+}
+
+textarea {
+    outline: none;
+    font-family: var(--font-family-1);
+    border: 1px solid var(--color-grey-3);
+    border-radius: var(--radius-1);
+    resize: none;
+}
+
+textarea::placeholder {
+    font-weight: 400;
+    font-size: var(--size-3);
+    color: var(--color-grey-2);
+}

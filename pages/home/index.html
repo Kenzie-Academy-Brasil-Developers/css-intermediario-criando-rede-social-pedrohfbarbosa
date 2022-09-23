@@ -4,16 +4,152 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/flex.css">
+    <link rel="stylesheet" href="../../styles/navbar.css">
+    <link rel="stylesheet" href="../../styles/sizes.css">
+    <link rel="stylesheet" href="../../styles/space.css">
+    <link rel="stylesheet" href="../../styles/text.css">
+    <link rel="stylesheet" href="../../styles/input.css">
+    <link rel="stylesheet" href="../../styles/button.css">
+    <link rel="stylesheet" href="../../styles/user-card.css">
+    <link rel="stylesheet" href="../../styles/display-mobile.css">
+    <link rel="stylesheet" href="../../styles/modal.css">
+    <link rel="stylesheet" href="./style.css">
     <title>TechPosters - Home</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-  </body>
-  <script src="/script/database/users.js"></script>
-  <script src="/script/database/posts.js"></script>
-  <script src="/script/database/sugestUsers.js"></script>
-  <script src="index.js"></script>
+    <header class="bg-dark navbar">
+      <nav class="flex justify-between items-center container">
+        <figure class="logo">
+          <img src="../../assets/img/logo.svg" alt="Logo TechPosters">
+        </figure>
+        <div class="flex gap-1">
+          <button class="navbar-link">
+            <a href="">Sair</a>
+          </button>
+        </div>      
+      </nav>
+    </header>
+    <div class="content-wrapper mt-1 container flex justify-between flex-wrap gap-4 pb-1">
+      <div class="form-wrapper container-minor flex flex-col gap-3">
+        <div class="user-card">
+          <div class="img-wrapper">
+            <img src="../../assets/img/user1.svg" alt="">
+          </div>
+          <div>
+            <h3>Samuel Leão</h3>
+            <span>Front end engineer</span>          
+          </div>
+        </div>
+        <form class="flex flex-col gap-3">
+          <input type="text" placeholder="Digite o título do post">
+          <textarea class="padding-1 text-1 color-light-grey" name="" id="" cols="10" rows="5" placeholder="Digitar descrição do post"></textarea>
+          <button class="self-end post-button">Postar</button>
+        </form>
+      </div>      
+      <aside class="suggestions-wrapper flex flex-col gap-3 w-30">
+        <h2 class="title-2">Sugestões para você seguir</h2>
+        <ul class="follow-suggestions flex flex-col gap-3">
+          <li class="flex items-center justify-between">
+            <div class="user-card">
+              <div class="img-wrapper">
+                <img src="../../assets/img/user1.svg" alt="">
+              </div>
+              <div>
+                <h3>Samuel Leão</h3>
+                <span>Front end engineer</span>          
+              </div>
+            </div>
+            <button class="button-follow flex items-center">Seguir</button>
+          </li>
+          <li class="flex items-center justify-between">
+            <div class="user-card">
+              <div class="img-wrapper">
+                <img src="../../assets/img/user1.svg" alt="">
+              </div>
+              <div>
+                <h3>Samuel Leão</h3>
+                <span>Front end engineer</span>          
+              </div>
+            </div>
+            <button class="button-follow flex items-center">Seguir</button>
+          </li>
+          <li class="flex items-center justify-between">
+            <div class="user-card">
+              <div class="img-wrapper">
+                <img src="../../assets/img/user1.svg" alt="">
+              </div>
+              <div>
+                <h3>Samuel Leão</h3>
+                <span>Front end engineer</span>          
+              </div>
+            </div>
+            <button class="button-follow flex items-center">Seguir</button>
+          </li>
+        </ul>
+      </aside>
+      <main>
+        <section class="container-minor flex flex-col gap-3">
+          <h2 class="title-2">Posts</h2>
+          <ul class="flex flex-col gap-4">
+            <li class="flex flex-col gap-2">
+              <div class="user-card">
+                <div class="img-wrapper">
+                  <img src="../../assets/img/user1.svg" alt="">
+                </div>
+                <div>
+                  <h3>Samuel Leão</h3>
+                  <span>Front end engineer</span>          
+                </div>
+              </div>
+              <h2 class="title-1">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+              <p class="text-1">
+                Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.
+              </p>
+              <div class="flex gap-1 items-center">
+                <button class="button-open-post">Abrir Post</button>
+                <div class="flex items-center">
+                  <button class="button-like flex items-center">
+                    <img src="../../assets/img/Vector (1).png" alt="">
+                  </button>
+                  <span class="text-2">25</span>
+                </div>
+              </div>
+            </li>
+            <li class="flex flex-col gap-2">
+              <div class="user-card">
+                <div class="img-wrapper">
+                  <img src="../../assets/img/user1.svg" alt="">
+                </div>
+                <div>
+                  <h3>Samuel Leão</h3>
+                  <span>Front end engineer</span>          
+                </div>
+              </div>
+              <h2 class="title-1">Como criar um interface simples e agradável utilizando boas práticas de design</h2>
+              <p class="text-1">
+                Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto feito por um profissional de UI design.
+              </p>
+              <div class="flex gap-1 items-center">
+                <button class="button-open-post">Abrir Post</button>
+                <div class="flex items-center">
+                  <button class="button-like flex items-center">
+                    <img src="../../assets/img/Vector (1).png" alt="">
+                  </button>
+                  <span class="text-2">25</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+     
+    </div>
+    <script src="../../script/database/users.js"></script>
+    <script src="../../script/database/sugestUsers.js"></script>
+    <script src="../../script/database/posts.js"></script>    
+    <script src="./index.js"></script>
+  </body> 
 </html>
