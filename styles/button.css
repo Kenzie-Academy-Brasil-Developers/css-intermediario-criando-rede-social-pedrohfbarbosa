@@ -18,6 +18,12 @@ button {
     
 }
 
+.button-following {
+    background-color: var(--color-brand);
+    color: var(--color-white-fixed);
+    border-color: var(--color-brand);
+}
+
 .post-button:hover {
     background-color: var(--color-black);
     color: var(--color-white-fixed);
